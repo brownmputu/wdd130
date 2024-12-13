@@ -146,3 +146,59 @@ footer a img {
 footer a {
     text-decoration: none;
 }
+fuck:header {
+    display:grid;
+    background-color: var(--primary-color);
+    color: rgb(222, 20, 20);
+    padding: 1px 1px;
+    align-items: center;
+    justify-content:space-between;
+    
+}
+
+header img {
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    margin-left: 5%;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0%;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  li {
+    float:;
+    border: 1px solid #bbb;
+    border-color: blue;
+    background-color: #FFA500;
+    max-width: 150px;
+     
+  }
+  
+  li a {
+    display: inline-block;
+    padding: 5px;
+    margin-left: 2px;
+  }
+
+nav a{
+    color: var(--accent2-color);
+    text-decoration: none;
+    display:inline
+
+}
+
+
+nav a:hover {
+    color:var(--secondary-color);
+}
