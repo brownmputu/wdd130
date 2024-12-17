@@ -1,358 +1,481 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-:root {
-    --primary-color: #0077BE;
-    --secondary-color: #2E8B57;
-    --accent1-color:#FFA500;
-    --accent2-color: #f0f0f0;
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #1e272b;
+    margin: 0;
+    padding: 0;
 }
 
+header img {
+    width: 100px;
+    height: auto;
+}
 
 header {
 	margin: 1rem auto;
 	display: grid;
-	grid-template-columns: 400px 1fr 1fr;
+	grid-template-columns: 120px 1fr 2fr;
 	align-items: center;
-	border-bottom: 1px solid #ccc;
-	max-width: 1000px;
+	border-bottom: 1px solid #b3b1b1;
+  background-color: #d0c2e5;
+  text-decoration: none;
 }
 
 .logo img {
-	margin:0 0.25rem 0 1rem;
-	width: 45px;
+	margin: 0 0.25rem 0 1rem;
+	width: 100px;
 	height: auto;
-  align-items: center;
 }
 
-.hero h1 {
-	font-size: 2,5rem;
+h1 {
+	font-size: 2rem;
 	font-family: Acme, Arial, sans-serif;
-  text-align: center;
-  padding: ;
+}
 
+/* Styles for the navigation bar */
+nav {
+  position: absolute;
+  right: 12%;
+  text-align: right;
+  padding: 5px;
   
 }
 
-nav {
-	text-align: right;
+.navigation ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+ 
 }
-
-.navigation {
-	display: flex;
-	flex-wrap: wrap;
-	list-style: none;
-	padding: 0;
+.navigation li{
+  text-decoration: none;
+  padding: 1px;
 }
-
-.navigation li {
-	flex: 1 1 auto;
-}
-
-.navigation a {
-	display: block;
-	color: navy;
-	padding: 5px;
-	text-decoration: none;
+.navigation  {
+ display: flex;
+ color: navy;
 }
 
 .navigation a:hover {
-	color: tomato;
-	font-weight: 700;
-	text-decoration: underline;
+ color: tomato;
+ font-weight: 700;
+ text-decoration: underline;
 }
 
-
-
-
-
-footer {
-    text-align: center;
-    padding: 1px 1px;
-    background-color: var(--primary-color);
-    color:var(--accent2-color);
+/* Main Section */
+main {
+  padding: 20px;
 }
 
-footer a img {
-    height: 20px;
-    margin: 0 10px;
-    width: 20px;
-    float: inline-end;
+/* about Section */
+/*history section*/
+.hero {
+  background-color: #f7f8f8;
+  margin: 15px 0;
+  padding: 20px;
+  border: 1px solid #ccc;
 }
-
-footer a {
-    text-decoration: none;
-}
-main.grid{
-  max-width: 840px;
-  margin: 0 auto;
-  padding: 1px 1px;
-  color: #01080d;
-}
-
-.hero{
-  position:relative;
-}
-
-.hero img {
-  width: 100%;
-  display: flex;
-}
- 
 .hero h1{
-position: absolute;
-top: 80px;
-width: 30%;
-
-padding: 20px 0;
-text-align: center;
-left: 35%;
+   text-align: center;
 }
 
+.content{
+   display: flex;
+   text-align: center;
+   padding: 1px;
+   margin: 0px 0;
+}
 
-.hero article{
-  background-color: rgba(255,255,255,.35);
-  
-  position:relative;
-   width: 90%;
-    margin: 1px;;
-   bottom: 500px;
-    padding: 1rep;
-    background-color: #93898f;
-    color: #333;
-    position: absolute;
+.content img{
+   width: 150px;
+   height: 125px;
+}
+
+.history {
+    background-color: #e7e3f3;
+    padding: 20px;
+    margin: 20px 0;
+  }
+
+  .history h2{
     text-align: center;
-    left: 5%;
-    
+  }
   
- 
-}
-
-.hero article img{
-  float: right;
-  margin: 10px;
-  width: 150px;
-  height: auto;
-}
- 
-.hero article p,h2{
-  color:black;
-  font-size:16px;
-  text-align: center;
-  display: block;
-  text-align: left;
-}
-
-article img {
-  width: 200px;
-}
-.history{
-  display: inline-flex;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 1px;
-}
-
-.history img{
-  width: 60vh;
-}
-
-.history-item{
-  padding: 20px;
+  .history-content {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    align-items: center;
+  }
   
-}
-
-.subhead1{
-    display: flex;
-}
-.subhead{
-    text-align: center;
-}
-.figurative{
-    display: flex;
-    margin-left: -55px;
-    gap: 10px;
-    /* align-items: space-around ; */
-} 
-
-
-
-
-
-
-.sociallinks a {
-  text-decoration: none;
-  justify-content: center;
-  gap: 15px;
-  /* margin: 50px; */
-
-}
-
-/* New styles for Contact Page */
-
-.contact-info {
-  background-color: var(--accent2-color);
-  padding: 20px;
-  margin-bottom: 30px;
-  border-radius: 8px;
-}
-
-.contact-info p {
-  font-size: 1.2rem;
-  margin: 10px 0;
-}
-
-.google-map iframe {
-  width: 100%;
-  height: 400px;
-  border: none;
-  border-radius: 8px;
-  margin-top: 20px;
-}
-
-.employee-profiles {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 30px;
-}
-
-.employee-profile {
+  .text-block {
+    width: 20%;
+  }
+  
+  .history-content img {
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+  }
+/*contact member section*/
+.adventure1 {
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  padding: 15px;
   text-align: center;
+}
+
+.adventure1 h1{
+  text-align: center;
+  padding: 5px;
+}
+
+.adventure1 h2{
+  text-align: center;
+  padding: 5px;
+}
+
+.gallery1 {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  gap: 5px;
+}
+
+.team-member image {
+  position: static;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
   width: 150px;
-}
-
-.employee-profile img {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.employee-profile p {
-  font-weight: bold;
-  font-size: 1.1rem;
-}
-
-form {
-  background-color: var(--accent2-color);
-  padding: 20px;
-  border-radius: 8px;
-}
-
-form label {
-  display: block;
-  margin-bottom: 8px;
-  font-size: 1rem;
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1rem;
-}
-
-form fieldset {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-}
-
-form legend {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-form input[type="radio"] {
-  margin-right: 8px;
-}
-
-form textarea {
   height: 150px;
 }
 
-form input[type="checkbox"] {
-  margin-right: 10px;
+
+/* about page happy workers Section */
+.adventure {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    padding: 1px;
+  }
+
+  .adventure h1{
+    text-align: center;
+    padding: 5px;
+  }
+  
+  .gallery {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    gap: 5px;
+  }
+  
+  .gallery-item image {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    width: 100px;
+    height: 100px;
+  }
+  .gallery-item figcaption{
+    text-align: center;
+  }
+
+  /* Form style*/
+
+  h1 {
+    margin: 1rem;
+    font-size: 1.5em;
+    color: navy;
+    text-align: center;
 }
 
-.submit-button {
-  background-color: var(--primary-color);
-  color: white;
-  font-size: 1.2rem;
-  padding: 12px 20px;
-  border: none;
+form{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+}
+
+.contact-form h2{
+  text-align: center;
+}
+
+fieldset{
+    grid-gap: .1rem;
+    margin: 1%;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+legend {
+    font-size: 18px;
+    color: navy;
+    padding: 0.5rem;
+}
+label, input, button, select, textarea {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+label{
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+input, select, textarea {
+    padding: 0.1rem;
+    font-size: 1.1rem;
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: calc(103% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    }
+
+button {
+    background-color: #2e2e8e;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+button:hover {
+    background-color: #1a242f;
+}
+.form-item {
+    display: grid;
+    align-items: center;
+}
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.3rem 0;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+iframe {
+  padding: 10px 10px;
+  border: 0;
+  width: 80%;
+  height: 400px;
   border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+  /* Footer */
+footer {
+  background-color: #a182cf;
+  color: white;
+  text-align: center;
+  padding: 30px ;
+  width: 100%;
+ }
+
+.sociallinks a{
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+
+  .sociallinks img {
+    float: right;
+    width: 28px;
+    height: 28px;
+    margin: 0 5px;
+  }
+  
+/* Trip Section */
+
+.trip-section {
+  text-align: center;
+  margin: 40px 0;
+  padding: 40px 20px;
+  border-bottom: 3px solid #ccc;
+}
+ 
+.trip-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+
+/* Row Styling */
+.trip-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Trip Item Styling */
+.trip-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: center;
+}
+
+.trip-item img {
+  width: 100%;
+  height: 50%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.trip-item p {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+/* Button Styling */
+button {
+  background-color: #3139aa;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* index section*/
+main {
+  padding: 20px;
+}
+.signup {
+  background-color: #f9f9f9;
+  padding: 50px;
+  margin: 0;
+  border-radius: 0px;
+  box-shadow: 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.signup h2 {
+  margin-top: 5px;
+}
+.signup form {
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+.signup form label {
+  margin: 3px;
+}
+
+.signup form input {
+  margin-bottom: 30px;
+  padding: 10px;
+  width: 100%;
+  max-width: 450px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+.signup form button {
+  padding: 12px 12px;
+  display: block;
+  border-radius: 5px;
+  background-color: #3139aa;
+  color: rgb(241, 240, 240);
+  font-size: 1rem;
   cursor: pointer;
 }
 
-.submit-button:hover {
-  background-color: var(--secondary-color);
+.signup form button:hover {
+  background-color: #2b2a69;
 }
-
-header {
-  display:grid;
-  background-color: var(--primary-color);
-  color: rgb(222, 20, 20);
-  padding: 1px 1px;
-  
-}
-
-header img {
-  align-items: center;
-  justify-content: center;
-  height: 80px;
-  margin-left: 5%;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0%;
-  overflow: hidden;
+.cta {
+  background-color: #8e9091;
+  color: white;
   text-align: center;
+  padding: 40px 20px;
 }
 
-li {
-  border: 1px solid #bbb;
-  border-color: blue;
-  background-color: #FFA500;
-  max-width: 150px;
-   
+.cta h2 {
+  margin-top: 0;
 }
-
-li a {
-  display: inline-block;
-  padding: 5px;
-  margin-left: 2px;
-}
-
-nav a{
-  color: var(--accent2-color);
+.cta-button {
+  display:block;
+  padding: 10px 20px;
+  background-color: rgb(70, 49, 189);
+  color: #f5f4f7;
   text-decoration: none;
-  display:inline
-
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
 }
 
+.cta-button:hover {
+  background-color: #009bb5;
+  color: rgb(102, 99, 99);
+}
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
 
-nav a:hover {
-  color:var(--secondary-color);
+.grid-layout p {
+  color: rgb(248, 247, 245);
+  font-size: larger;
+  font-weight: bolder;
 }
-figure {
-  display: inline-block;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 40px;
-  margin-right: 40px;
-}
-.container img {
-  width: 100px;
-  height: 100px;
-}
-h2{
-  font: 2em sans-serif;
+
+.grid-item {
   text-align: center;
-  
+}
+
+.grid-item img {
+  width: 100%;
+  height: 50%;
+  border: 3px solid var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Adjust height as needed */
+  text-align: center;
+}
+.hero-container-image{
+  width: 80%;
+  height:80%;
+  margin-top: 20px;
+  object-fit: cover;
 }
